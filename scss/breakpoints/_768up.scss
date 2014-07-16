@@ -1,0 +1,451 @@
+/******************************************************************
+Site Name: #{$site-name}
+Author: #{$author}
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.large-wrap{
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+	h1, .h1 {	@include font-size(2.475);	line-height: 2.813rem; } 
+	h2, .h2 {	@include font-size(1.375);	} 
+	h3, .h3 {	@include font-size(1.2);	} 
+	h4, .h4 {	@include font-size(1);		} 
+	h5, .h5 {	@include font-size(0.875);	} 
+	h6, .h6 {	@include font-size(0.75);	} 
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header {
+	padding: 20px 0;
+	background: $brand-highlight;
+}
+
+/*********************
+LOGO STYLES
+*********************/
+
+	#logo {
+		width: col_width(4);
+		width: col_width(4, true);
+		text-align: left;
+		float: left;
+		margin-left: 0;
+		padding: 30px 0;
+
+		img{
+		    margin: 0em auto;
+		    max-width: 100%;
+		    position: relative;
+		    z-index: 20;
+		}
+	}
+	
+
+
+#masthead{
+	
+	.wrap {
+		position: relative;
+	}
+	
+	.h1{
+		position: absolute;
+		top: 40px;
+		left: 0;
+		width: 53%;
+		
+		//Size of the font + line-height to golden ratio
+		@include font-size(2);
+		line-height: 2.438rem
+	}
+
+}
+
+.small-logo{
+	padding: 0 50px;
+}
+
+// This will be for all the P's that add some shit to the top.
+
+.welcome div > p { 
+	margin-top: 0;
+}
+
+
+#main {
+	margin-bottom: 1.5em;	
+}
+
+
+
+.mobile-only{
+	display: none;
+	visibility: hidden;
+}
+
+
+.tablet-only{
+	display: inline-block;
+	visibility: visible;
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.navigation, nav[role=navigation]{
+	float: right;
+	width: col_width(7);
+	width: col_width(7, true);
+}
+
+.nav {
+	vertical-align: middle;
+	@include columns(3);
+	text-align: left;
+
+	.js & {
+		display: block;
+		top: auto;
+		right: auto;
+		left: auto;
+		max-height: 100%;
+	}
+	
+	li {
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+			&:hover, &:focus {
+				
+				a{
+				}
+			}
+			
+		a {
+			border-bottom: 0;
+			@include font-size(1);
+			padding: 12px 0px;
+			font-weight: 400;
+
+			@include transition(0.2s color linear);
+
+			&:hover, &:focus, &:active {
+				color: $grey-darker;
+			}
+		}
+
+		&:first-child {}
+		&:last-child {}
+		
+		/*
+		plan your menus and drop-downs wisely.
+		*/
+		.js & ul.show.sub-menu,
+		.js & ul.show.children,
+		ul.sub-menu,
+		ul.children {
+			margin-top: 0;
+			border-top: 0;
+			position: absolute;
+			display: none;
+			z-index: 15;
+			text-align: left;
+			color: $white;
+			background: $brand-colour;
+
+			li {
+
+				&:hover, &:focus {
+					a{
+						background: darken($brand-colour, 10%);
+						border-radius: 2px;
+					}
+				}
+				
+				a {
+					@include font-size(0.85);
+					padding: 2px 0 2px 14px;
+					border-right: 0;
+					display: block;
+					width: 200px;
+					color: $white;
+					
+					&:hover,
+					&:focus {}
+
+					&:link {}
+				}
+
+				&:first-child {}
+
+				&:last-child {
+
+					a {
+						border-bottom: 0;
+					}
+				}
+
+				/*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/
+				ul {}
+			}
+
+			/* highlight sub-menu current page */
+			li.current-menu-item,
+			li.current_page_item,
+			li.current-page-ancestor {
+				a {}
+			}
+		}
+
+		/* showing sub-menus */
+		&:hover ul {
+			top: auto;
+			display: block;
+		}
+
+	} /* end .menu ul li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current-page-ancestor {
+		a {}
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+
+/*****************************
+S H I M   B U I L D E R   P A G E
+*****************************/
+
+.calculator {
+
+	select{
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;	
+		text-overflow: '';
+		text-indent: 0.01px;
+	}
+
+	p:after {
+	    content: attr(data-symbol);
+	    float: right;
+	    @include font-size(1.35);
+	    position: relative;
+	    right: -50px;
+	    top: -45px;
+	    vertical-align: middle;
+	}
+	
+	&.small{
+		input, select{
+			font-size: 85%;
+			padding: 9px 12px;
+		}
+		p:after{
+			content: "";
+		}
+	}
+}
+
+.shim{
+	img{
+		width: 100%;
+		height: auto;
+		padding: 0 60px;
+	}
+}
+
+.numbers{
+	list-style: none;
+	text-align: center;
+	counter-reset: section;
+	
+	li{
+		width: 32.33333%;
+		display: inline-block;
+		vertical-align: top;
+		
+		&:before{
+			@include shim(150px, 75px, 75px, 200px, 10px, $brand-colour, $brand-colour);
+			content: counter(section, decimal);
+			counter-increment: section;
+			display: block;
+			margin:  auto;
+			color: $white;
+			line-height: 150px;
+			@include font-size(2.5);
+		
+		}
+	}
+}
+
+.shim-switch{
+	margin-top: -5rem;
+	width: auto !important;
+}
+
+/*****************************
+M A T E R I A L S   P A G E
+*****************************/
+
+
+.materials{
+
+	.item{
+		width: col_width(6);
+		width: col_width(6, true);
+		padding: 0 10px;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		display: inline-block;
+		vertical-align: top;
+		
+		.specs{
+			section{
+				width: col_width(6);
+				width: col_width(6, true);
+				text-align: left;
+				vertical-align: top;
+				display: inline-block;
+				
+			}
+		}
+	}
+}
+
+
+/*****************************************
+R E S O U R C E S   &   D O W N L O A D S
+******************************************/
+
+.downloads{
+
+	.download{
+	    display: inline-block;
+	    padding: 30px;
+		vertical-align: top;
+		
+	    margin: calc(10px - 0px);
+	    width: calc(33% - 23px);
+	    
+		h3{
+			@include font-size(1.25);
+			line-height: 1.5;
+		}
+		
+		img{
+			width: 50%;
+			margin: 20px 0;;
+		}	
+	}
+}
+
+
+/*****************************************
+C O N T A C T   U S   P A G E
+******************************************/
+
+#map{
+	position: relative;
+}
+
+.contact-information{
+	width: 80%;
+	position: absolute;
+	top: 0;
+	left: 10%;
+	border-bottom: 10px solid $white;
+	
+	.split {
+		vertical-align: top;
+		width: 49%;
+		display: inline-block;
+		padding: 10px 20px;
+	}
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+
+/*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+
+.footer{
+	text-align: left;
+
+	a{	
+		&:hover{
+			color: $brand-colour;
+			text-decoration: underline;
+		}
+	}
+}
+
+footer{
+	padding: 40px 0;
+	
+	span{
+		margin-bottom: 0;
+	}
+	
+	.text-right{
+		line-height: 3;
+		vertical-align: middle;
+	}
+	
+}

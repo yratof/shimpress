@@ -1,0 +1,145 @@
+/******************************************************************
+Site Name: #{$site-name}
+Author: #{$author}
+
+Stylesheet: Button Styles
+
+Buttons are a pretty important part of your site's style, so it's
+important to have a consistent baseline for them. Use this stylesheet
+to create all kinds of buttons.
+
+Helpful Links:
+http://galp.in/blog/2011/08/02/the-ui-guide-part-1-buttons/
+
+******************************************************************/
+
+/*********************
+BUTTON DEFAULTS
+We're gonna use a placeholder selector here
+so we can use common styles. We then use this
+to load up the defaults in all our buttons.
+
+Here's a quick video to show how it works:
+http://www.youtube.com/watch?v=hwdVpKiJzac
+
+*********************/
+
+
+/************************************
+		B U T T O N   C O L O U R S
+	
+	This mixin gives you a button in any
+	colour that you want. It then decides
+	if the background is dark or light and
+	gives you white or dark grey text colour.
+
+
+*************************************/
+@mixin button($colour, $style: false){
+
+	@if ($style) {
+		// Standard styles
+		border: none;
+		text-indent:0;
+		display: inline-block;
+		font-weight: normal;
+		font-style: normal;
+		text-decoration: none;
+		text-align: center;
+		cursor: pointer;
+		padding: 9px 3px;
+		margin-bottom: 1em;
+		outline: none; 
+		-webkit-font-smoothing: antialiased;
+		width: 100%;
+
+		@media (min-width: $tablet){
+			width: 140px;
+			padding: 9px 5px;
+		}
+				
+		@media (min-width: $beyond){
+			width: 176px;
+			padding: 9px 14px;
+		}
+
+
+
+	}
+	
+	/**********************************
+	 This determines the background colour
+	 in a greyscale manner, if it's lighter
+	 than 40% lightness, the text colour
+	 becomes dark to compensate.
+	**********************************/
+
+	color: $white;
+	background: $colour;
+
+	$brightness: lightness($colour);
+	@if ($brightness < 70%) {
+	
+		color: $white;
+		&:hover, &:focus, &:active { color: $white; }
+		
+	} @else {
+	
+		color: $text-color;
+		&:hover, &:focus, &:active { color: $text-color; }
+		
+	}
+	
+	/**********************************
+	 This is the style for the hovers,
+	 the actives and the visited.
+	**********************************/
+
+	&:hover{
+		background: lighten($colour, 5%);
+	}
+	
+	&:active{ 
+		background: darken($colour, 10%); 
+
+		@if ($style) {
+			box-shadow: inset 0px 10px 5px -7px darken($colour, 20%);
+			position: relative;
+		    top: 2px;
+		}
+	}
+
+	&:visited{
+		background: $colour;
+	}
+}
+
+/******************************
+Button Classes that you can have
+for free. Go on. Have them
+******************************/
+
+.button.brand {			@include button($brand-colour, true);		}
+.button.highlight { 	@include button($brand-highlight, true); 	}
+.button.white {			@include button($white, true); 				}
+.button.black {			@include button($black, true);				}
+.button.compliment {	@include button($brand-compliment, true);	}
+
+.button.clear {	
+	@include button(transparent, true);	
+	border: 2px solid $white;
+	
+	
+	&:active{
+		background: $brand-compliment;
+	}
+}
+
+
+.button.order{
+    display: inline;
+    margin-right: 20px;
+    padding: 9px 14px;
+    vertical-align: super;
+    width: 176px;
+}

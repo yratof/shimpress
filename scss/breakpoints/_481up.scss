@@ -1,0 +1,90 @@
+/******************************************************************
+Site Name: #{$site-name}
+Author: #{$author}
+
+Stylesheet: 481px and Up Stylesheet
+
+This stylesheet is loaded for larger devices. It's set to 
+481px because at 480px it would load on a landscaped iPhone.
+This isn't ideal because then you would be loading all those
+extra styles on that same mobile connection. 
+
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base.scss styles.
+
+******************************************************************/
+
+
+/*****************************
+M A T E R I A L S   P A G E
+*****************************/
+
+.materials{
+
+	.item{
+		width: 100%;
+		padding: 0 10px;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1em;
+		display: inline-block;
+		vertical-align: top;
+		
+		img{
+			width: 100%;
+			height: auto;
+		}
+		
+		.specs{
+			section{
+				width: 49%;
+				text-align: center;
+				vertical-align: top;
+				display: inline-block;
+				float: none;
+			}
+		}
+	}
+}
+
+
+.numbers{
+	list-style: none;
+	text-align: center;
+	counter-reset: section;
+	
+	li{
+		width: 32.33333%;
+		display: inline-block;
+		vertical-align: top;
+		
+		&:before{
+			@include shim(100px, 50px, 50px, 200px, 10px, $brand-colour, $brand-colour);
+			content: counter(section, decimal);
+			counter-increment: section;
+			display: block;
+			margin:  auto;
+			color: $white;
+			line-height: 100px;
+			@include font-size(2);
+		}
+	}
+}
+
+
+/*****************************************
+C O N T A C T   U S   P A G E
+******************************************/
+
+.contact-information{
+
+	.split {
+		vertical-align: top;
+		width: 47%;
+		display: inline-block;
+		padding: 10px 30px;
+		text-align: left;
+	}
+}

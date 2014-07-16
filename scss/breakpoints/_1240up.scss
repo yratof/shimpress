@@ -1,0 +1,55 @@
+/******************************************************************
+Site Name: #{$site-name}
+Author: #{$author}
+
+Stylesheet: Super Large Monitor Stylesheet
+
+You can add some advanced styles here if you like. This kicks in
+on larger screens.
+
+******************************************************************/
+
+#masthead{
+	
+	.wrap {
+		position: relative;
+	}
+	
+	.h1{
+		position: absolute;
+		top: 40px;
+		left: 0;
+		width: 45%;
+		
+		//Size of the font + line-height to golden ratio
+		@include font-size(2.563);
+		line-height: 3.438rem
+	}
+
+}
+
+
+
+/*****************************************
+C O N T A C T   U S   P A G E
+******************************************/
+
+#map{
+	position: relative;
+}
+
+.contact-information{
+	width: 480px;
+	padding: 60px 90px 40px;
+	position: absolute;
+	top: 0;
+	left: 10%;
+	border-bottom: 10px solid $white;
+
+	.split {
+		vertical-align: top;
+		width: 100%;
+		display: inline-block;
+		padding: 0;
+	}
+}

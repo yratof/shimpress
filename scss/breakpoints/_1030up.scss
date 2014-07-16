@@ -1,0 +1,106 @@
+/******************************************************************
+Site Name: #{$site-name}
+Author: #{$author}
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop. 
+
+******************************************************************/
+
+.fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 30;
+}
+
+//-------------------------------------------------------------
+// H E A D I N G S - h1, h2, h3, h4, h5, h6
+//-------------------------------------------------------------
+
+h1, .h1 {	@include font-size(2.875);	line-height: 3.813rem; } 
+h2, .h2 {	@include font-size(1.875);	} 
+h3, .h3 {	@include font-size(1.5);	} 
+h4, .h4 {	@include font-size(1.125);	} 
+h5, .h5 {	@include font-size(1);		} 
+h6, .h6 {	@include font-size(0.85);	} 
+
+//-------------------------------------------------------------
+
+#masthead{
+	
+	.h1{
+		top: 40px;
+		width: 53%;
+		
+		//Size of the font + line-height to golden ratio
+		@include font-size(2.563);
+		line-height: 3.438rem
+	}
+
+}
+
+
+
+/*****************************
+M A T E R I A L S   P A G E
+*****************************/
+
+
+.materials{
+
+	.item{
+		width: col_width(4);
+		width: col_width(4, true);
+		padding: 0 10px;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+}
+
+
+/*****************************************
+R E S O U R C E S   &   D O W N L O A D S
+******************************************/
+
+.downloads{
+
+	.download{
+	    display: inline-block;
+	    padding: 30px;
+
+	    margin: calc(10px - 0px);
+	    width: calc(25% - 23px);
+	    
+		h3{
+		}		
+	}
+}
+
+/*****************************************
+C O N T A C T   U S   P A G E
+******************************************/
+
+#map{
+	position: relative;
+}
+
+.contact-information{
+	width: 80%;
+	position: absolute;
+	top: 0;
+	left: 10%;
+	border-bottom: 10px solid $white;
+	
+	.split {
+		vertical-align: top;
+		width: 49%;
+		display: inline-block;
+	}
+}

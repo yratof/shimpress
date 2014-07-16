@@ -1,0 +1,134 @@
+<!-- @import "../kit/head.kit" -->
+
+<!--------S L I D E R---------->
+<!-- $slidetitle = Shim Press offer the highest quality material stocks available -->
+<!-- $slideimage = /images/masthead/home.jpg -->
+<!-- @import "../kit/slider.kit" -->
+<!--------S L I D E R---------->
+
+<!-- $pagetitle = Shim Builder -->
+
+			<div id="content">
+
+				<div id="inner-content" class="wrap clearfix">
+
+					<div id="shim-round" class="clearfix" role="main">
+						
+						<h1 class="clearfix">Round <!--$pagetitle--></h1>
+						<a href="#shim-square" class="button brand last shim-switch">Switch to square shim builder</a>
+
+						<section class="sixcol first clearfix">
+							<form class="calculator">
+								<p>
+								<select class="thickness">
+									<option disabled selected="selected">Shim Thickness</option>			
+									<option>5mm</option>			
+									<option>6mm</option>			
+									<option>7mm</option>			
+									<option>8mm</option>			
+									<option>9mm</option>			
+								</select>
+								</p>
+								
+								<p data-symbol="mm"><input placeholder="Measurement A" type="number" required/></p>
+								<p data-symbol="mm"><input placeholder="Measurement B" type="number" required/></p>
+								<p><input placeholder="Quantity" type="number" required/></p>
+								<p><input placeholder="Job Number (Optional)" type="text"/></p>
+								<p><input type="submit" value="calculate" class="button brand last"/></p>
+							</form>
+						</section>
+						
+						<section class="shim sixcol last clearfix">
+							<img src="/images/round-shim.svg" alt="shim" />
+						</section>
+
+					</div>
+					
+					<div id="shim-square" class="clearfix" role="main">
+
+						<h1 class="">Square <!--$pagetitle--></h1>
+						<a href="#shim-round" class="button brand last shim-switch">Switch to round shim builder</a>
+
+						<section class="sixcol first clearfix">
+							<form class="calculator">
+								<p>
+								<select class="thickness">
+									<option disabled selected="selected">Shim Thickness</option>			
+									<option>5mm</option>			
+									<option>6mm</option>			
+									<option>7mm</option>			
+									<option>8mm</option>			
+									<option>9mm</option>			
+								</select>
+								</p>
+								
+								<p data-symbol="mm"><input placeholder="Measurement A" type="number" required/></p>
+								<p data-symbol="mm"><input placeholder="Measurement B" type="number" required/></p>
+								<p><input placeholder="Quantity" type="number" required/></p>
+								<p><input placeholder="Job Number (Optional)" type="text"/></p>
+								<p><input type="submit" value="calculate" class="button brand last"/></p>
+							</form>
+						</section>
+						
+						<section class="shim sixcol last clearfix">
+							<img src="/images/square-shim.svg" alt="shim" />
+						</section>
+
+					</div>
+					
+				</div>
+				
+			</div>
+
+
+			<footer class="blue-background">
+			
+				<div class="wrap clearfix">
+				
+					<div class="twelvecol last clearfix text-center">
+
+						<a href="#" class="button clear order">Order Shim</a><span class="h1">&pound;170</span>
+						
+						<h2 class="h1">Do You Have a Completely Non Standard Shape?</h2>
+						<p>If you can't create what you're looking for, you could always submit your own drawing below. 
+						Please make the file either pdf, jpg, zip or tiff file</p>
+										
+						<form class="uploader" action="#">
+							
+							<p class="sixcol first"><input tabindex="1" type="text" placeholder="Full Name*" required/></p>
+							<p class="sixcol last"><input tabindex="2" type="text" placeholder="Email Address*" required/></p>
+							
+							<script type="text/javascript">
+								
+								// This styles the uploader for files, 
+								// it's a dodgy work around, but it works so far
+								
+								jQuery(function($) {
+									$("input:file").each(function(){
+										$(this).change(function (){
+											var fileName = $(this).val();
+											$(this).parent().parent().find('.behindupload').html(fileName).addClass('accepted');
+										});
+									});
+								});
+
+							</script>
+							
+							<p class="sixcol first"><input tabindex="3" type="text" placeholder="Telephone" required/></p>
+							<p class="sixcol last">
+							
+							<span class="behindupload">No File Chosen</span>
+							<input tabindex="4" type="file" class="hidden-file" value="Chose File" required/></p>
+														
+							<div class="text-center twelvecol first clearfix">
+								<button type="submit" class="button clear">Submit</button>
+							</div>
+						</form>
+						
+					</div>
+					
+				</div>
+				
+			</footer>
+
+<!-- @import "../kit/footer.kit" -->

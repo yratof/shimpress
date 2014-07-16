@@ -1,0 +1,721 @@
+/******************************************************************
+Site Name: #{$site-name}
+Author: #{$author}
+
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+/*************************************************
+	We include the grid for when you're 
+	using the lowest file, you might still
+	want to use this in the base, the 481 etc
+*************************************************/
+
+@import 'partials/gridmath';
+
+
+body {
+	-webkit-font-smoothing: antialiased;
+	background: $white;
+	font-family: $sans-serif;
+	font-size: 90%;
+	line-height: 1.5;
+	color: $brand-colour;
+	font-weight: 300;
+}
+
+.wrap {
+	width: 86%;
+	margin: 0 auto;
+	
+	@media (max-width: $tablet) {
+		max-width: $mobile;
+	}
+	
+}
+
+
+/*********************
+HEADING STYLES - Type
+*********************/
+
+h1, h2, h3, h4, h5, h6 {
+	text-rendering: optimizelegibility; // Fix the character spacing for headings
+	color: $brand-colour;
+	font-weight: 300;
+}
+
+	h1, .h1 {
+		@include font-size(1.5);
+	}
+	h2, .h2 {
+		//margin-top: 0.1em;
+		@include font-size(1.3125);
+		line-height: 1.1;
+	}
+	h3, .h3 {
+		@include font-size(1.2);
+		line-height: 1;
+	}
+	h4, .h4 {
+		@include font-size(1.1);
+		line-height: 1;
+	}
+	h5, .h5 {
+		@include font-size(1);
+		line-height: 1;
+	}
+	h6, .h6 {
+		@include font-size(0.75);
+		line-height: 1;
+	}
+
+
+/*********************
+SEPARATION STYLES
+*********************/
+
+// Horizontal rules
+hr {
+	margin: ($gutter * 1.5) 0;
+	border: 0;
+	border-bottom: 1px solid $black;
+}
+
+.tablet-only{
+	display: none;
+	visibility: hidden;
+}
+
+/*********************
+LINK STYLES
+*********************/
+
+a, a:visited {
+	color: $link-color;
+	text-decoration: none;
+
+	/* on hover */
+	&:hover, &:focus {
+		color: $link-hover;
+	}
+
+	/* on click */
+	&:active {
+	}
+
+	/* mobile tap color */
+	&:link {
+		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+	}
+}
+
+b, strong{
+	font-weight: 400;
+}
+
+
+/*********************
+LOGO STYLES
+*********************/
+	
+	#logo {
+		display: block;
+		text-align: center;
+		width: 100%;
+		padding: 20px 30px;
+		
+		@media (max-width: $mobile){ 
+			padding: 20px 80px 20px 10px;
+			
+			img{
+				width: 100%;
+			}
+		}
+		
+		margin: 0;
+		
+		a{
+			border-bottom: 0;
+		}
+		
+		img{
+			max-width: 320px;
+			height: auto;
+			margin: 0 auto;
+		}
+	}
+	
+	.small-logo{
+		padding: 0 50px;
+	}
+	
+
+/*********************
+NAVIGATION AND MENUS
+*********************/
+
+/*
+all navs have a .nav class applied via
+the wp_menu function; this is so we can
+easily write one group of styles for
+the navs on the site so our css is cleaner
+and more scalable.
+*/
+	
+	%togglable {
+	
+		@media only screen and (max-width: $tablet) {	
+		
+			.js & {
+		
+				overflow: hidden;
+				max-height: 0;
+				@include transition(0.4s all $ease-in-out-quart);
+		
+				&.show {
+					max-height: 2000px;
+				}
+			}
+		}
+	}
+
+
+
+/*********************
+MOBILE DROPDOWN NAVIGATION STYLES
+*********************/
+	
+	.clickable {
+		margin: 0;
+		color: $brand-colour;
+		cursor: pointer;
+		padding: 0;
+		width: 40px;
+		position: absolute;
+		top: 32px;
+		right: 20px;
+	}
+	
+	.menu-icon {
+		margin-top: 0px;
+		padding: 0;
+		
+		div {
+			height: 4px;
+			width: 100%;
+			margin-bottom: 5px;
+			border-radius: 2px;
+			background: $brand-colour;
+		}
+		
+	}
+
+
+/*********************
+NAVIGATION STYLES
+*********************/
+	
+	.nav {
+		margin: 0;
+		width: 100%;
+		float: left;
+		text-align: center;
+		
+		@media only screen and (max-width: $tablet) {	
+			.js & {
+				overflow: hidden;
+				max-height: 0;
+				@include transition(0.4s all $ease-in-out-quart);
+				&.show { max-height: 2000px; }
+			}
+		}
+	
+		
+		.js & {
+			border-top: 0;
+	
+			// This only applies to js enabled windows
+			// We use js to adjust the top position
+			//position: absolute;
+			left: 0;
+			right: 0;
+			display: inline-block;
+			position: relative;
+			top: 0;
+			z-index: 5;
+			
+			li{
+				a{
+				width: 100%;
+				}
+			}
+		}
+		
+		li {
+		
+			width: 49%;
+			display: inline-block;
+			
+		
+			a {
+				display: inline-block;
+				text-decoration: none;
+				
+			}
+			
+			ul.sub-menu,
+			ul.children {
+			
+				@media only screen and (max-width: $tablet) {	
+					.js & {
+						overflow: hidden;
+						max-height: 0;
+						@include transition(0.4s all $ease-in-out-quart);
+						&.show { max-height: 2000px; }
+					}
+				}
+				li {
+					a {
+						//@include bg($white);
+						padding-left: $gutter * 2;
+					}
+				}
+			}
+		} /* end .menu li */
+	} /* end .nav */
+	
+	
+	.list{
+		li{
+			list-style: inside;
+		}
+	}
+
+	.specs{
+	
+		border-top: 1px solid $brand-colour;
+		
+		h3{
+		
+		}
+	}
+
+
+/*********************
+IMG STYLES
+*********************/
+
+	img {
+		margin: 0;
+		max-width: 100%;
+		height: auto;
+		vertical-align: bottom;
+	}
+	
+	
+	
+	blockquote {
+	    background: $grey-lighter;
+	    border-left: 10px solid;
+	    margin: 0;
+	    padding: 1em 2em;
+	}
+
+
+	.pagination{
+	
+		.page-numbers{
+	
+			width: 100%;
+			display: inline-block;
+			text-align: center;
+			
+			li{
+				display: inline-block;
+				padding: 4px;
+				
+				a, .span {
+					background: $brand-colour;
+					color: $white;
+					border-radius: 2px;
+					display: inline-block;
+					line-height: 1.75;
+					height: 30px;
+					width: 30px;
+					text-align: center;
+					vertical-align: middle;
+				}
+			}
+					
+		}
+	
+	}
+
+
+
+
+
+/*****************************
+S H I M   B U I L D E R   P A G E
+*****************************/
+
+.calculator {
+
+	select{
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;	
+		text-overflow: '';
+		text-indent: 0.01px;
+	}
+
+}
+
+.shim{
+	img{
+		width: 100%;
+		height: auto;
+		padding: 10px;
+	}
+}
+
+
+// Something like that on the HOW TO page
+
+@mixin shim($outter, $height, $width, $round, $thickness, $colour, $shim){
+
+	width: $outter;
+	height: $outter;
+	background: $colour;
+	border-radius: $round;
+
+	& > span {
+	    background: $shim;
+	    border: $thickness solid $white;
+	    border-radius: $round;
+	    display: block;
+	    height: $width;
+	    left: 50%;
+	    margin: (-$width / 2) (-$height / 2);
+	    position: absolute;
+	    top: 50%;
+	    width: $height;
+	}
+
+}
+
+.shim-shapes{
+	text-align: center;
+}
+
+.shim-shape{
+
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+	
+	&.round {
+		@include shim(150px, 75px, 75px, 200px, 10px, $brand-colour, $brand-colour);
+	}
+	
+	&.square{
+		@include shim(150px, 75px, 75px, 0px, 10px, $brand-colour, $white);
+	}
+	
+	&.rectangle{
+		@include shim(150px, 100px, 40px, 0px, 10px, $brand-colour, $white);
+	}
+}
+
+
+
+.numbers{
+	list-style: none;
+	text-align: center;
+	counter-reset: section;
+	
+	li{
+		width: 49%;
+		display: inline-block;
+		vertical-align: top;
+		
+		&:before{
+			@include shim(100px, 50px, 50px, 200px, 10px, $brand-colour, $brand-colour);
+			content: counter(section, decimal);
+			counter-increment: section;
+			display: block;
+			margin:  auto;
+			color: $white;
+			line-height: 100px;
+			@include font-size(2.5);
+			vertical-align: middle;
+		}
+	}
+}
+
+
+// This is fake tabs for the shim builder page
+
+#shim-round{ 
+	display: block;
+	&:not(:target){
+		display: none;
+	}	
+}
+
+#shim-square{ display: none;
+	&:target{
+		display: block;
+	}
+}
+
+
+
+
+/*
+	Uploads form
+*/
+
+.hidden-file {
+    height: 50px;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.behindupload {
+
+    left: 0;
+    line-height: 3;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+	&:after{
+		content: "Chose File";
+		@include button(transparent, true);	
+		border: 2px solid $white;
+		float: right;
+
+		position: relative;
+		z-index: 1;
+		line-height: 1.5;
+
+		&:active{
+			background: $brand-compliment;
+		}
+	}
+}
+
+/*****************************
+M A T E R I A L S   P A G E
+*****************************/
+
+
+.materials{
+
+	.item{
+		width: 100%;
+		max-width: 320px;
+		margin-left: auto;
+		margin-right: auto;
+		display: inline-block;
+		vertical-align: top;
+		
+		.specs{
+			section {
+				width: 49%;
+				float: left;
+				
+				& + section {
+					width: 35%;
+					float: right;
+				}
+			}
+		}
+	}
+	
+}
+
+
+/*****************************************
+R E S O U R C E S   &   D O W N L O A D S
+******************************************/
+
+.downloads{
+
+	.download{
+		background: $brand-colour;
+		border-radius: 10px;
+		display: inline-block;
+		vertical-align: top;
+		color: $white;
+		text-align: center;
+		padding: 0px 10px;
+		
+		width: 130px;
+		margin: 6px;
+		
+		margin: calc(6px - 0px);
+		width: calc(50% - 14px);
+		
+		
+		h3{
+			color: $white;
+			@include font-size(1);
+			line-height: 1.4;
+		}
+		
+		img {
+		    margin: 20px 0 0;
+		    width: 30%;
+		}
+	}
+}
+
+#download {
+
+	&:target{
+		background: $brand-colour;
+		color: $white;
+		text-align: center;
+		vertical-align: middle;
+		z-index: 100;
+		@include font-size(3);
+		border-radius: 10px;
+		padding: 30px;
+		height: 130px;
+		position: fixed;
+	}
+	
+	&:not(:target){
+		display: none;
+	}
+}
+
+
+/*****************************************
+C O N T A C T   U S   P A G E
+******************************************/
+
+#map{}
+
+.contact-information{
+	background: $brand-colour;
+	color: $white;
+	padding: 20px;
+	
+	p{
+
+	}
+	
+	a, h2, h3{
+		color: $white;
+		margin: 0;
+	}
+
+	.split {
+	    padding: 0 20px;
+	    text-align: center;
+	}
+}
+
+
+/*********************
+SIDEBAR STYLES
+*********************/
+
+.sidebar{
+	
+	ul{ 
+		margin: 0;
+	}
+	
+	li {
+	
+		a {
+			display: block;
+		}
+	}
+}
+
+
+/*********************
+FOOTER STYLES
+*********************/
+
+
+.blue-background{
+	background-color: $brand-colour;
+	background-image: url('../images/blue-background.png');
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	
+	h1,h2,h3,h4,h5,h6,
+	.h1,.h2,.h3,.h4,.h5,.h6{
+		color: $white;
+	}
+	
+	@media (max-width: $tablet){
+		.fourcol{
+			margin-bottom: 1em;
+			text-align: center;
+			display: inline-block;
+			width: 100%;
+			
+			p{
+				text-align: justify;
+			}
+		}
+	}	
+}
+
+footer {
+
+	background: $brand-compliment;
+	color: $white;
+	padding: 20px 0;
+
+
+}
+
+
+
+.footer{
+	@include font-size(1);
+	text-align: center;
+
+	@media (max-width: $tablet){
+		span{
+			margin-bottom: 1em;
+			text-align: center;
+			display: inline-block;
+			width: 100%;
+		}
+	}
+	
+	a{
+		color: $white;
+		text-decoration: none;
+	}
+	
+}
+
+
