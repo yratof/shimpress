@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "17580",
+"creatorBuild": "17625",
 "files": {
 	"\/about.html": {
 		"fileType": 8192,
@@ -40,7 +40,7 @@
 		},
 	"\/how-it-works.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/how-it-works.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -49,7 +49,7 @@
 		},
 	"\/html_elements\/footer.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/html_elements\/footer.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -58,7 +58,7 @@
 		},
 	"\/html_elements\/footer_form.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/html_elements\/footer_form.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -67,7 +67,7 @@
 		},
 	"\/html_elements\/footer_three_columns.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/html_elements\/footer_three_columns.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -76,7 +76,7 @@
 		},
 	"\/html_elements\/head.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/html_elements\/head.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -85,7 +85,7 @@
 		},
 	"\/html_elements\/slider.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/html_elements\/slider.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -94,7 +94,7 @@
 		},
 	"\/html_elements\/variables.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/html_elements\/variables.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -105,7 +105,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 31318,
+		"initialSize": 7888,
 		"inputAbbreviatedPath": "\/images\/apple-icon-touch.png",
 		"outputAbbreviatedPath": "\/images\/apple-icon-touch.png",
 		"outputPathIsOutsideProject": 0,
@@ -149,7 +149,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 989,
+		"initialSize": 988,
 		"inputAbbreviatedPath": "\/images\/login-logo.png",
 		"outputAbbreviatedPath": "\/images\/login-logo.png",
 		"outputPathIsOutsideProject": 0,
@@ -160,7 +160,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 5875,
+		"initialSize": 7298,
 		"inputAbbreviatedPath": "\/images\/logo.png",
 		"outputAbbreviatedPath": "\/images\/logo.png",
 		"outputPathIsOutsideProject": 0,
@@ -182,7 +182,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 76946,
+		"initialSize": 72045,
 		"inputAbbreviatedPath": "\/images\/masthead\/home.jpg",
 		"outputAbbreviatedPath": "\/images\/masthead\/home.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -259,7 +259,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 26741,
+		"initialSize": 10383,
 		"inputAbbreviatedPath": "\/images\/meat-logo.png",
 		"outputAbbreviatedPath": "\/images\/meat-logo.png",
 		"outputPathIsOutsideProject": 0,
@@ -314,7 +314,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 36557,
+		"initialSize": 9480,
 		"inputAbbreviatedPath": "\/images\/win8-tile-icon.png",
 		"outputAbbreviatedPath": "\/images\/win8-tile-icon.png",
 		"outputPathIsOutsideProject": 0,
@@ -323,7 +323,7 @@
 		},
 	"\/index.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -344,7 +344,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/ie.js",
-		"outputAbbreviatedPath": "\/js\/min\/ie-ck.js",
+		"outputAbbreviatedPath": "\/js\/min\/ie-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -355,7 +355,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/jquery-head.js",
-		"outputAbbreviatedPath": "\/js\/min\/jquery-head-ck.js",
+		"outputAbbreviatedPath": "\/js\/min\/jquery-head-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -366,7 +366,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/libs\/modernizr.custom.min.js",
-		"outputAbbreviatedPath": "\/js\/libs\/min\/modernizr.custom.min-ck.js",
+		"outputAbbreviatedPath": "\/js\/libs\/min\/modernizr.custom.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -377,7 +377,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/meat.js",
-		"outputAbbreviatedPath": "\/js\/min\/meat-ck.js",
+		"outputAbbreviatedPath": "\/js\/min\/meat-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -385,10 +385,10 @@
 		},
 	"\/js\/min\/ie-ck.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/min\/ie-ck.js",
-		"outputAbbreviatedPath": "\/js\/min\/min\/ie-ck-ck.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/ie-ck-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -399,7 +399,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/min\/jquery-head-ck.js",
-		"outputAbbreviatedPath": "\/js\/min\/min\/jquery-head-ck-ck.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/jquery-head-ck-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -410,7 +410,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/min\/meat-ck.js",
-		"outputAbbreviatedPath": "\/js\/min\/min\/meat-ck-ck.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/meat-ck-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -421,7 +421,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/min\/scripts-ck.js",
-		"outputAbbreviatedPath": "\/js\/min\/min\/scripts-ck-ck.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/scripts-ck-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -432,7 +432,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/scripts.js",
-		"outputAbbreviatedPath": "\/js\/min\/scripts-ck.js",
+		"outputAbbreviatedPath": "\/js\/min\/scripts-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -440,61 +440,61 @@
 		},
 	"\/kit\/footer.kit": {
 		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kit\/footer.kit",
-		"outputAbbreviatedPath": "\/html_elements\/footer.html",
+		"outputAbbreviatedPath": "\/kit\/footer.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kit\/footer_form.kit": {
 		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kit\/footer_form.kit",
-		"outputAbbreviatedPath": "\/html_elements\/footer_form.html",
+		"outputAbbreviatedPath": "\/kit\/footer_form.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kit\/footer_three_columns.kit": {
 		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kit\/footer_three_columns.kit",
-		"outputAbbreviatedPath": "\/html_elements\/footer_three_columns.html",
+		"outputAbbreviatedPath": "\/kit\/footer_three_columns.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kit\/head.kit": {
 		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kit\/head.kit",
-		"outputAbbreviatedPath": "\/html_elements\/head.html",
+		"outputAbbreviatedPath": "\/kit\/head.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kit\/slider.kit": {
 		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kit\/slider.kit",
-		"outputAbbreviatedPath": "\/html_elements\/slider.html",
+		"outputAbbreviatedPath": "\/kit\/slider.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/kit\/variables.kit": {
 		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kit\/variables.kit",
-		"outputAbbreviatedPath": "\/html_elements\/variables.html",
+		"outputAbbreviatedPath": "\/kit\/variables.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/material-stocks.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/material-stocks.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -506,76 +506,76 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pages\/about.kit",
-		"outputAbbreviatedPath": "\/about.html",
+		"outputAbbreviatedPath": "\/pages\/about.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/pages\/contact.kit": {
 		"fileType": 2048,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pages\/contact.kit",
-		"outputAbbreviatedPath": "\/contact.html",
+		"outputAbbreviatedPath": "\/pages\/contact.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/pages\/how-it-works.kit": {
 		"fileType": 2048,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pages\/how-it-works.kit",
-		"outputAbbreviatedPath": "\/how-it-works.html",
+		"outputAbbreviatedPath": "\/pages\/how-it-works.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/pages\/index.kit": {
 		"fileType": 2048,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pages\/index.kit",
-		"outputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "\/pages\/index.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/pages\/material-stocks.kit": {
 		"fileType": 2048,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pages\/material-stocks.kit",
-		"outputAbbreviatedPath": "\/material-stocks.html",
+		"outputAbbreviatedPath": "\/pages\/material-stocks.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/pages\/resources.kit": {
 		"fileType": 2048,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pages\/resources.kit",
-		"outputAbbreviatedPath": "\/resources.html",
+		"outputAbbreviatedPath": "\/pages\/resources.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/pages\/shim-builder.kit": {
 		"fileType": 2048,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pages\/shim-builder.kit",
-		"outputAbbreviatedPath": "\/shim-builder.html",
+		"outputAbbreviatedPath": "\/pages\/shim-builder.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/pages\/terms-conditions.kit": {
 		"fileType": 2048,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pages\/terms-conditions.kit",
-		"outputAbbreviatedPath": "\/terms-conditions.html",
+		"outputAbbreviatedPath": "\/pages\/terms-conditions.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/resources.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/resources.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -689,7 +689,7 @@
 		"outputAbbreviatedPath": "\/css\/ie.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
@@ -935,7 +935,7 @@
 		"useLibsass": 0
 		},
 	"\/scss\/style.scss": {
-		"createSourceMap": 1,
+		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
@@ -945,14 +945,14 @@
 		"outputAbbreviatedPath": "\/css\/style.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
 	"\/shim-builder.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/shim-builder.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -961,7 +961,7 @@
 		},
 	"\/terms-conditions.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/terms-conditions.html",
 		"outputAbbreviatedPath": "No Output Path",
