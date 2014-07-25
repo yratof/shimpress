@@ -44,6 +44,14 @@ body {
 	
 }
 
+#masthead{
+	background: #FCFCFC;
+	
+	img{
+		margin: 0 auto;
+		display: block;
+	}
+}
 
 /*********************
 HEADING STYLES - Type
@@ -523,6 +531,21 @@ S H I M   B U I L D E R   P A G E
 			background: $brand-compliment;
 		}
 	}
+}
+
+
+// Shim Error Messages
+
+.field-validation-error {
+    background: $alert-red;
+    color: $white;
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-validation-error {
+    border-color: $alert-red;
 }
 
 /*****************************

@@ -1423,6 +1423,12 @@ body {
     .wrap {
       max-width: 30.063em; } }
 
+#masthead {
+  background: #FCFCFC; }
+  #masthead img {
+    margin: 0 auto;
+    display: block; }
+
 /*********************
 HEADING STYLES - Type
 *********************/
@@ -1827,6 +1833,16 @@ S H I M   B U I L D E R   P A G E
     .behindupload:after:active {
       background: #0f2859; }
 
+.field-validation-error {
+  background: #be3333;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  width: 100%; }
+
+.input-validation-error {
+  border-color: #be3333; }
+
 /*****************************
 M A T E R I A L S   P A G E
 *****************************/
@@ -2193,11 +2209,13 @@ you can add resource intensive styles.
     max-width: 1140px;
     margin: 0 auto; }
 
-  .large-wrap {
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto; }
-
+  /*
+  .large-wrap{
+  	max-width: 1440px;
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+  */
   /*********************
   HEADER STYLES
   *********************/
