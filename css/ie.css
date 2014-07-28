@@ -791,7 +791,11 @@ select {
   background-position: 95% center;
   width: 105%; }
 
-form p {
+/* This fucking thing here tries to overwrite
+the default firefox behaviour of making all
+for selects and number fields look like a
+massive shit.*/
+form > p:first-child {
   overflow: hidden; }
 
 /******************************************************************

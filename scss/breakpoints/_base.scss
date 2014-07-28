@@ -474,17 +474,29 @@ S H I M   B U I L D E R   P A G E
 }
 
 
-// This is fake tabs for the shim builder page
+/* 
+
+	This is fake tabs for the shim builder page.
+	
+	It's a fucking pain in the arse.
+	
+*/
 
 #shim-round{ 
+	
 	display: block;
+	
 	&:not(:target){
 		display: none;
 	}	
 }
 
-#shim-square{ display: none;
-	&:target{
+
+#shim-square {
+	
+	display: none;
+	
+	&:target {
 		display: block;
 	}
 }

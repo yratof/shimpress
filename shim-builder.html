@@ -99,6 +99,23 @@
 					<div id="shim-round" class="clearfix" role="main">
 						
 						<h1 class="clearfix">Round Shim Builder</h1>
+				
+						<script type="text/javascript">
+							jQuery(document).ready(function($){
+								$('#shim-round').show();
+								$('#shim-square').hide();
+								
+								$('#shim-round .shim-switch').click(function(){
+									$('#shim-square').show();
+									$('#shim-round').hide();
+								});
+								$('#shim-square .shim-switch').click(function(){
+									$('#shim-round').show();
+									$('#shim-square').hide();
+								});
+							});
+						</script>
+						
 						<a href="#shim-square" class="button brand last shim-switch">Switch to square shim builder</a>
 
 						<section class="sixcol first clearfix">

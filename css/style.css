@@ -1308,7 +1308,11 @@ select {
   background-position: 95% center;
   width: 105%; }
 
-form p {
+/* This fucking thing here tries to overwrite
+the default firefox behaviour of making all
+for selects and number fields look like a
+massive shit.*/
+form > p:first-child {
   overflow: hidden; }
 
 /******************************************************************
@@ -1747,6 +1751,13 @@ S H I M   B U I L D E R   P A G E
         top: 50%;
         width: 50px; }
 
+/* 
+
+	This is fake tabs for the shim builder page.
+	
+	It's a fucking pain in the arse.
+	
+*/
 #shim-round {
   display: block; }
   #shim-round:not(:target) {
