@@ -797,6 +797,8 @@ for selects and number fields look like a
 massive shit.*/
 form > p:first-child {
   overflow: hidden; }
+  form > p:first-child + p {
+    overflow: hidden; }
 
 /******************************************************************
 COMMENT FORM STYLES

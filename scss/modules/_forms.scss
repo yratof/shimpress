@@ -133,6 +133,10 @@ massive shit.*/
 form{
 	> p:first-child {
 		overflow: hidden;
+		
+		& + p{
+			overflow: hidden;
+		}	
 	}
 }
 
