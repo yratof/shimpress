@@ -354,13 +354,9 @@ M A T E R I A L S   P A G E
 		vertical-align: top;
 		
 		.specs{
-			section{
-				width: col_width(6);
-				width: col_width(6, true);
-				text-align: left;
-				vertical-align: top;
-				display: inline-block;
-				
+			section{				
+				& + section {
+				}
 			}
 		}
 	}

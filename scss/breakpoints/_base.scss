@@ -576,13 +576,19 @@ M A T E R I A L S   P A G E
 		vertical-align: top;
 		
 		.specs{
+		
 			section {
-				width: 49%;
-				float: left;
+				width: 39%;
+				text-align: left;
+				vertical-align: top;
+				display: inline-block;
 				
 				& + section {
-					width: 35%;
-					float: right;
+					width: 60%;
+					
+					.list{
+						@include columns(3);
+					}
 				}
 			}
 		}
