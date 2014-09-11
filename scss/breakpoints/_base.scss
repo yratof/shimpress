@@ -585,9 +585,14 @@ M A T E R I A L S   P A G E
 				
 				& + section {
 					width: 60%;
+					margin: 0;
 					
 					.list{
 						@include columns(3);
+						
+						li{
+							list-style: none;
+						}
 					}
 				}
 			}

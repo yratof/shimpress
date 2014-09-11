@@ -971,7 +971,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Andrew Smith",
+"lastSavedByUser": "Andrew Lazarus",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -1104,7 +1104,7 @@
 			"flagValue": -1
 			},
 		"prefer_english_operator": {
-			"active": false,
+			"active": 0,
 			"flagValue": -1
 			},
 		"space_operators": {

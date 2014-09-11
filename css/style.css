@@ -1875,11 +1875,14 @@ M A T E R I A L S   P A G E
     vertical-align: top;
     display: inline-block; }
     .materials .item .specs section + section {
-      width: 60%; }
+      width: 60%;
+      margin: 0; }
       .materials .item .specs section + section .list {
         -webkit-columns: 3;
         -moz-columns: 3;
         columns: 3; }
+        .materials .item .specs section + section .list li {
+          list-style: none; }
 
 #map {
   text-align: center; }
