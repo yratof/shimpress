@@ -530,7 +530,7 @@ S H I M   B U I L D E R   P A G E
     z-index: 1;
 
 	&:after{
-		content: "Chose File";
+		content: "Choose File";
 		@include button(transparent, true);	
 		border: 2px solid $white;
 		float: right;

@@ -1795,7 +1795,7 @@ S H I M   B U I L D E R   P A G E
   width: 100%;
   z-index: 1; }
   .behindupload:after {
-    content: "Chose File";
+    content: "Choose File";
     border: none;
     text-indent: 0;
     display: inline-block;
