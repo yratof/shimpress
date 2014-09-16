@@ -101,7 +101,7 @@ LOGO STYLES
 }
 
 .small-logo{
-	padding: 0 50px;
+	padding: 0;
 }
 
 // This will be for all the P's that add some shit to the top.
@@ -264,6 +264,24 @@ NAVIGATION STYLES
 } /* end .nav */
 
 
+
+
+// Changed how it works now to suit the content.
+
+// This is the top and bottom columns
+.shit-one, .shit-three {
+    -moz-columns: 3 auto;
+}
+
+// Column with Logo in
+.shit-two {
+	img{
+		max-width: 400px;
+		height: auto;
+	}
+}
+
+
 /*****************************
 S H I M   B U I L D E R   P A G E
 *****************************/
@@ -355,6 +373,9 @@ M A T E R I A L S   P A G E
 }
 
 
+
+
+
 /*****************************************
 R E S O U R C E S   &   D O W N L O A D S
 ******************************************/
@@ -417,6 +438,7 @@ mobile. Make sure to double check these!
 
 .footer{
 	text-align: left;
+	@include font-size(0.8);
 
 	a{	
 		&:hover{

@@ -15,6 +15,26 @@ upon your base.scss styles.
 
 ******************************************************************/
 
+@media (min-width: $tablet - 5em){
+	// Changed how it works now to suit the content.
+	// Will and Tom need to have a RWD course. Fucking twats.
+	.shit-one, .shit-two, .shit-three {
+	    display: inline-block;
+	    position: relative;
+	    vertical-align: top;
+	}
+	
+	// This is the top and bottom columns
+	.shit-one, .shit-three {
+	    -moz-columns: 2 auto;
+	    width: 100%;
+	}
+	
+	// Column with Logo in
+	.shit-two {
+	    width: 100%;
+	}
+}
 
 /*****************************
 M A T E R I A L S   P A G E

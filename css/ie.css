@@ -1037,6 +1037,18 @@ so you still want to keep it pretty light and simply expand
 upon your base.scss styles.
 
 ******************************************************************/
+@media (min-width: 42.9em) {
+  .shit-one, .shit-two, .shit-three {
+    display: inline-block;
+    position: relative;
+    vertical-align: top; }
+
+  .shit-one, .shit-three {
+    -moz-columns: 2 auto;
+    width: 100%; }
+
+  .shit-two {
+    width: 100%; } }
 /*****************************
 M A T E R I A L S   P A G E
 *****************************/
@@ -1199,7 +1211,7 @@ LOGO STYLES
   line-height: 2.438rem; }
 
 .small-logo {
-  padding: 0 50px; }
+  padding: 0; }
 
 .welcome div > p {
   margin-top: 0; }
@@ -1307,6 +1319,13 @@ NAVIGATION STYLES
       display: block; }
 
 /* end .nav */
+.shit-one, .shit-three {
+  -moz-columns: 3 auto; }
+
+.shit-two img {
+  max-width: 400px;
+  height: auto; }
+
 /*****************************
 S H I M   B U I L D E R   P A G E
 *****************************/
@@ -1430,7 +1449,9 @@ of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
 .footer {
-  text-align: left; }
+  text-align: left;
+  font-size: 12.8px;
+  font-size: 0.8rem; }
   .footer a:hover {
     color: #12316d;
     text-decoration: underline; }
@@ -1491,6 +1512,13 @@ h6, .h6 {
   font-size: 2.563rem;
   line-height: 3.438rem; }
 
+.shit-one, .shit-three {
+  -moz-columns: 1 auto;
+  width: 31.47505%; }
+
+.shit-two {
+  width: 31.47505%; }
+
 /*****************************
 M A T E R I A L S   P A G E
 *****************************/
@@ -1529,6 +1557,16 @@ C O N T A C T   U S   P A G E
     vertical-align: top;
     width: 49%;
     display: inline-block; }
+
+/*****************************************
+F O O T E R
+******************************************/
+.small-logo {
+  padding: 0 20px; }
+
+.footer {
+  font-size: 16px;
+  font-size: 1rem; }
 
 /*
 you can call the larger styles if you want, but there's really no need

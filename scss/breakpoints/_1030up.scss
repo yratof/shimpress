@@ -42,6 +42,18 @@ h6, .h6 {	@include font-size(0.85);	}
 
 }
 
+
+// This is the top and bottom columns
+.shit-one, .shit-three {
+    -moz-columns: 1 auto;
+	width: col_width(4);
+}
+
+// Column with Logo in
+.shit-two {
+	width: col_width(4);
+}
+
 /*****************************
 M A T E R I A L S   P A G E
 *****************************/
@@ -100,4 +112,17 @@ C O N T A C T   U S   P A G E
 		width: 49%;
 		display: inline-block;
 	}
+}
+
+
+/*****************************************
+F O O T E R
+******************************************/
+
+.small-logo{
+	padding: 0 20px;
+}
+
+.footer{
+	@include font-size(1);
 }
