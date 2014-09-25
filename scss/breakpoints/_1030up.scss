@@ -52,6 +52,10 @@ h6, .h6 {	@include font-size(0.85);	}
 // Column with Logo in
 .shit-two {
 	width: col_width(4);
+	margin-left: $gutter_em;
+}
+.shit-three{
+	margin-left: $gutter_em;
 }
 
 /*****************************

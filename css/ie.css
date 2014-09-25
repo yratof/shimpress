@@ -1324,6 +1324,7 @@ NAVIGATION STYLES
 
 .shit-two img {
   max-width: 400px;
+  width: 100%;
   height: auto; }
 
 /*****************************
@@ -1517,7 +1518,11 @@ h6, .h6 {
   width: 31.47505%; }
 
 .shit-two {
-  width: 31.47505%; }
+  width: 31.47505%;
+  margin-left: 1rem; }
+
+.shit-three {
+  margin-left: 1rem; }
 
 /*****************************
 M A T E R I A L S   P A G E
